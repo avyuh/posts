@@ -1,0 +1,24 @@
+title: Abhishek Jha
+url: "https://posts.jhaabhi.com"
+baseurl: "/posts"
+
+remote_theme: riggraz/no-style-please
+
+plugins:
+  - jekyll-remote-theme
+
+theme_config:
+  appearance: "auto"
+
+markdown: kramdown
+kramdown:
+  input: GFM
+
+permalink: /:title/
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: post
