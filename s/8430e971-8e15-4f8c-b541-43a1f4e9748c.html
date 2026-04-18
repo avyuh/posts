@@ -486,9 +486,26 @@ permalink: /s/8430e971-8e15-4f8c-b541-43a1f4e9748c/
         box-shadow: 0 0 0 5px rgba(46, 134, 80, 0.18);
       }
 
-      .distance {
+      .distance,
+      .price {
         font-variant-numeric: tabular-nums;
+      }
+
+      .distance {
         white-space: nowrap;
+      }
+
+      .price {
+        font-weight: 800;
+        letter-spacing: -0.03em;
+        white-space: nowrap;
+      }
+
+      .price small {
+        color: var(--text-faint);
+        font-size: 0.77rem;
+        font-weight: 600;
+        margin-left: 6px;
       }
 
       .amenities {
@@ -548,6 +565,10 @@ permalink: /s/8430e971-8e15-4f8c-b541-43a1f4e9748c/
           <div class="stat">
             <span class="stat-label">Metro lines</span>
             <span class="stat-value">3 lines covered</span>
+          </div>
+          <div class="stat">
+            <span class="stat-label">Price range</span>
+            <span class="stat-value">7,470 - 17,380</span>
           </div>
         </div>
       </section>
@@ -623,192 +644,221 @@ permalink: /s/8430e971-8e15-4f8c-b541-43a1f4e9748c/
                     <span class="sort-icon" aria-hidden="true">↑</span>
                   </button>
                 </th>
+                <th scope="col" data-key="price" data-type="number">
+                  <button class="sort-button" type="button">
+                    Price
+                    <span class="sort-icon" aria-hidden="true">↕</span>
+                  </button>
+                </th>
               </tr>
             </thead>
             <tbody id="apartment-body">
-              <tr data-project="SOBHA Neopolis" data-location="Panathur / Balagere" data-amenities="25 acres, basketball, tennis, aqua park, toddlers pad, cycling, skating" data-station="Outer Ring Road Yellow" data-metro-distance="2.0" data-etv="2.7">
+              <tr data-project="SOBHA Neopolis" data-location="Panathur / Balagere" data-amenities="25 acres, basketball, tennis, aqua park, toddlers pad, cycling, skating" data-station="Outer Ring Road Yellow" data-metro-distance="2.0" data-etv="2.7" data-price="14621">
                 <td><div class="cell-stack"><span class="project-name">SOBHA Neopolis</span></div></td>
                 <td>Panathur / Balagere</td>
                 <td class="amenities">25 acres, basketball, tennis, aqua park, toddlers pad, cycling, skating</td>
                 <td><span class="station-wrap">Outer Ring Road <span class="badge line-yellow">Yellow</span></span></td>
                 <td class="distance">2.0 km</td>
                 <td class="distance">2.7 km</td>
+                <td class="price">₹14,621<small>/ sq ft</small></td>
               </tr>
-              <tr data-project="Bren Imperia" data-location="Haralur / Kasavanahalli" data-amenities="16+ acres, football, kids play, futsal, cricket pitch, nature play, pickleball" data-station="Ibbalur Yellow" data-metro-distance="3.0" data-etv="3.4">
+              <tr data-project="Bren Imperia" data-location="Haralur / Kasavanahalli" data-amenities="16+ acres, football, kids play, futsal, cricket pitch, nature play, pickleball" data-station="Ibbalur Yellow" data-metro-distance="3.0" data-etv="3.4" data-price="15070">
                 <td><div class="cell-stack"><span class="project-name">Bren Imperia</span></div></td>
                 <td>Haralur / Kasavanahalli</td>
                 <td class="amenities">16+ acres, football, kids play, futsal, cricket pitch, nature play, pickleball</td>
                 <td><span class="station-wrap">Ibbalur <span class="badge line-yellow">Yellow</span></span></td>
                 <td class="distance">3.0 km</td>
                 <td class="distance">3.4 km</td>
+                <td class="price">₹15,070<small>/ sq ft</small></td>
               </tr>
-              <tr data-project="SOBHA Ayana at Dream Acres" data-location="Balagere / Panathur Main Road" data-amenities="kids play, adventure trail, skating, futsal, cricket pitch, tennis, kids pool" data-station="Kundalahalli Purple" data-metro-distance="2.9" data-etv="3.6">
+              <tr data-project="SOBHA Ayana at Dream Acres" data-location="Balagere / Panathur Main Road" data-amenities="kids play, adventure trail, skating, futsal, cricket pitch, tennis, kids pool" data-station="Kundalahalli Purple" data-metro-distance="2.9" data-etv="3.6" data-price="14530">
                 <td><div class="cell-stack"><span class="project-name">SOBHA Ayana at Dream Acres</span></div></td>
                 <td>Balagere / Panathur Main Road</td>
                 <td class="amenities">kids play, adventure trail, skating, futsal, cricket pitch, tennis, kids pool</td>
                 <td><span class="station-wrap">Kundalahalli <span class="badge line-purple">Purple</span></span></td>
                 <td class="distance">2.9 km</td>
                 <td class="distance">3.6 km</td>
+                <td class="price">₹14,530<small>/ sq ft</small></td>
               </tr>
-              <tr data-project="Adarsh Park Heights" data-location="Gunjur / Varthur Hobli" data-amenities="52000sqft clubhouse, 4 badminton, 2 tennis, volleyball, cricket+football field, basketball, mini golf" data-station="Kundalahalli Purple" data-metro-distance="3.6" data-etv="4.9">
+              <tr data-project="Adarsh Park Heights" data-location="Gunjur / Varthur Hobli" data-amenities="52000sqft clubhouse, 4 badminton, 2 tennis, volleyball, cricket+football field, basketball, mini golf" data-station="Kundalahalli Purple" data-metro-distance="3.6" data-etv="4.9" data-price="17380">
                 <td><div class="cell-stack"><span class="project-name">Adarsh Park Heights</span></div></td>
                 <td>Gunjur / Varthur Hobli</td>
                 <td class="amenities">52000sqft clubhouse, 4 badminton, 2 tennis, volleyball, cricket+football field, basketball, mini golf</td>
                 <td><span class="station-wrap">Kundalahalli <span class="badge line-purple">Purple</span></span></td>
                 <td class="distance">3.6 km</td>
                 <td class="distance">4.9 km</td>
+                <td class="price">₹17,380<small>/ sq ft</small></td>
               </tr>
-              <tr data-project="SOBHA Dream Acres" data-location="Balagere / Panathur Main Road" data-amenities="81-acre community, tennis, badminton, strong child-density" data-station="Kundalahalli Purple" data-metro-distance="2.9" data-etv="5.4">
+              <tr data-project="SOBHA Dream Acres" data-location="Balagere / Panathur Main Road" data-amenities="81-acre community, tennis, badminton, strong child-density" data-station="Kundalahalli Purple" data-metro-distance="2.9" data-etv="5.4" data-price="13280">
                 <td><div class="cell-stack"><span class="project-name">SOBHA Dream Acres</span></div></td>
                 <td>Balagere / Panathur Main Road</td>
                 <td class="amenities">81-acre community, tennis, badminton, strong child-density</td>
                 <td><span class="station-wrap">Kundalahalli <span class="badge line-purple">Purple</span></span></td>
                 <td class="distance">2.9 km</td>
                 <td class="distance">5.4 km</td>
+                <td class="price">₹13,280<small>/ sq ft</small></td>
               </tr>
-              <tr data-project="Prestige Raintree Park" data-location="Varthur / Whitefield Main Road" data-amenities="kids play, futsal lawn, tennis, kids pool, cycle track, cricket pitch, basketball" data-station="Nallurhalli Purple" data-metro-distance="2.9" data-etv="6.5">
+              <tr data-project="Prestige Raintree Park" data-location="Varthur / Whitefield Main Road" data-amenities="kids play, futsal lawn, tennis, kids pool, cycle track, cricket pitch, basketball" data-station="Nallurhalli Purple" data-metro-distance="2.9" data-etv="6.5" data-price="14200">
                 <td><div class="cell-stack"><span class="project-name">Prestige Raintree Park</span></div></td>
                 <td>Varthur / Whitefield Main Road</td>
                 <td class="amenities">kids play, futsal lawn, tennis, kids pool, cycle track, cricket pitch, basketball</td>
                 <td><span class="station-wrap">Nallurhalli <span class="badge line-purple">Purple</span></span></td>
                 <td class="distance">2.9 km</td>
                 <td class="distance">6.5 km</td>
+                <td class="price">₹14,200<small>/ sq ft</small></td>
               </tr>
-              <tr data-project="Mana The Right Life" data-location="Chikkadevapura / Sarjapur-Varthur Road" data-amenities="100+ acre, soccer/cricket field, basketball, kids pool, trampoline, skating, tennis, pickleball" data-station="Eco Space Yellow" data-metro-distance="7.4" data-etv="7.8">
+              <tr data-project="Mana The Right Life" data-location="Chikkadevapura / Sarjapur-Varthur Road" data-amenities="100+ acre, soccer/cricket field, basketball, kids pool, trampoline, skating, tennis, pickleball" data-station="Eco Space Yellow" data-metro-distance="7.4" data-etv="7.8" data-price="11905">
                 <td><div class="cell-stack"><span class="project-name">Mana The Right Life</span></div></td>
                 <td>Chikkadevapura / Sarjapur-Varthur Road</td>
                 <td class="amenities">100+ acre, soccer/cricket field, basketball, kids pool, trampoline, skating, tennis, pickleball</td>
                 <td><span class="station-wrap">Eco Space <span class="badge line-yellow">Yellow</span></span></td>
                 <td class="distance">7.4 km</td>
                 <td class="distance">7.8 km</td>
+                <td class="price">₹11,905<small>/ sq ft</small></td>
               </tr>
-              <tr data-project="Assetz Canvas & Cove" data-location="Begur Village / Off Hosur Road" data-amenities="kids play, sand pit, futsal, tennis, basketball, skating, beach volleyball, badminton" data-station="Singasandra Yellow" data-metro-distance="1.9" data-etv="9.1">
+              <tr data-project="Assetz Canvas & Cove" data-location="Begur Village / Off Hosur Road" data-amenities="kids play, sand pit, futsal, tennis, basketball, skating, beach volleyball, badminton" data-station="Singasandra Yellow" data-metro-distance="1.9" data-etv="9.1" data-price="12100">
                 <td><div class="cell-stack"><span class="project-name">Assetz Canvas & Cove</span></div></td>
                 <td>Begur Village / Off Hosur Road</td>
                 <td class="amenities">kids play, sand pit, futsal, tennis, basketball, skating, beach volleyball, badminton</td>
                 <td><span class="station-wrap">Singasandra <span class="badge line-yellow">Yellow</span></span></td>
                 <td class="distance">1.9 km</td>
                 <td class="distance">9.1 km</td>
+                <td class="price">₹12,100<small>/ sq ft</small></td>
               </tr>
-              <tr data-project="Prestige Park Grove" data-location="Seegehalli / Chikka Banahalli Road" data-amenities="futsal court, kids play, badminton, multipurpose lawn, jogging track" data-station="Whitefield (Kadugodi) Purple" data-metro-distance="1.9" data-etv="11.7">
+              <tr data-project="Prestige Park Grove" data-location="Seegehalli / Chikka Banahalli Road" data-amenities="futsal court, kids play, badminton, multipurpose lawn, jogging track" data-station="Whitefield (Kadugodi) Purple" data-metro-distance="1.9" data-etv="11.7" data-price="14700">
                 <td><div class="cell-stack"><span class="project-name">Prestige Park Grove</span></div></td>
                 <td>Seegehalli / Chikka Banahalli Road</td>
                 <td class="amenities">futsal court, kids play, badminton, multipurpose lawn, jogging track</td>
                 <td><span class="station-wrap">Whitefield (Kadugodi) <span class="badge line-purple">Purple</span></span></td>
                 <td class="distance">1.9 km</td>
                 <td class="distance">11.7 km</td>
+                <td class="price">₹14,700<small>/ sq ft</small></td>
               </tr>
-              <tr data-project="Assetz Marq" data-location="Kannamangala / Whitefield-Hoskote Road" data-amenities="22 acres, creche, kids play, badminton, squash, basketball, tennis, skating, volleyball, in-campus school" data-station="Whitefield (Kadugodi) Purple" data-metro-distance="3.0" data-etv="13.2">
+              <tr data-project="Assetz Marq" data-location="Kannamangala / Whitefield-Hoskote Road" data-amenities="22 acres, creche, kids play, badminton, squash, basketball, tennis, skating, volleyball, in-campus school" data-station="Whitefield (Kadugodi) Purple" data-metro-distance="3.0" data-etv="13.2" data-price="14000">
                 <td><div class="cell-stack"><span class="project-name">Assetz Marq</span></div></td>
                 <td>Kannamangala / Whitefield-Hoskote Road</td>
                 <td class="amenities">22 acres, creche, kids play, badminton, squash, basketball, tennis, skating, volleyball, in-campus school</td>
                 <td><span class="station-wrap">Whitefield (Kadugodi) <span class="badge line-purple">Purple</span></span></td>
                 <td class="distance">3.0 km</td>
                 <td class="distance">13.2 km</td>
+                <td class="price">₹14,000<small>/ sq ft</small></td>
               </tr>
-              <tr data-project="Sattva Songbird" data-location="Budigere Cross / Cheemasandra" data-amenities="12 acres, cricket pitch, multi-purpose court, skating, tennis, basketball" data-station="Whitefield (Kadugodi) Purple" data-metro-distance="5.7" data-etv="14.6">
+              <tr data-project="Sattva Songbird" data-location="Budigere Cross / Cheemasandra" data-amenities="12 acres, cricket pitch, multi-purpose court, skating, tennis, basketball" data-station="Whitefield (Kadugodi) Purple" data-metro-distance="5.7" data-etv="14.6" data-price="14220">
                 <td><div class="cell-stack"><span class="project-name">Sattva Songbird</span></div></td>
                 <td>Budigere Cross / Cheemasandra</td>
                 <td class="amenities">12 acres, cricket pitch, multi-purpose court, skating, tennis, basketball</td>
                 <td><span class="station-wrap">Whitefield (Kadugodi) <span class="badge line-purple">Purple</span></span></td>
                 <td class="distance">5.7 km</td>
                 <td class="distance">14.6 km</td>
+                <td class="price">₹14,220<small>/ sq ft</small></td>
               </tr>
-              <tr data-project="SOBHA Townpark" data-location="Yadavanahalli / Hosur Road" data-amenities="50+ acre township, 90m cricket ground, kids zone, tennis, badminton, squash" data-station="Bommasandra Yellow" data-metro-distance="8.7" data-etv="16.9">
+              <tr data-project="SOBHA Townpark" data-location="Yadavanahalli / Hosur Road" data-amenities="50+ acre township, 90m cricket ground, kids zone, tennis, badminton, squash" data-station="Bommasandra Yellow" data-metro-distance="8.7" data-etv="16.9" data-price="14845">
                 <td><div class="cell-stack"><span class="project-name">SOBHA Townpark</span></div></td>
                 <td>Yadavanahalli / Hosur Road</td>
                 <td class="amenities">50+ acre township, 90m cricket ground, kids zone, tennis, badminton, squash</td>
                 <td><span class="station-wrap">Bommasandra <span class="badge line-yellow">Yellow</span></span></td>
                 <td class="distance">8.7 km</td>
                 <td class="distance">16.9 km</td>
+                <td class="price">₹14,845<small>/ sq ft</small></td>
               </tr>
-              <tr data-project="Bhartiya City / Nikoo Homes" data-location="Kogilu / Thanisandra" data-amenities="integrated city, walk-to-school, multi-sports court, cricket net, cycling" data-station="Baiyappanahalli Purple" data-metro-distance="10.5" data-etv="17.7">
+              <tr data-project="Bhartiya City / Nikoo Homes" data-location="Kogilu / Thanisandra" data-amenities="integrated city, walk-to-school, multi-sports court, cricket net, cycling" data-station="Baiyappanahalli Purple" data-metro-distance="10.5" data-etv="17.7" data-price="10520">
                 <td><div class="cell-stack"><span class="project-name">Bhartiya City / Nikoo Homes</span></div></td>
                 <td>Kogilu / Thanisandra</td>
                 <td class="amenities">integrated city, walk-to-school, multi-sports court, cricket net, cycling</td>
                 <td><span class="station-wrap">Baiyappanahalli <span class="badge line-purple">Purple</span></span></td>
                 <td class="distance">10.5 km</td>
                 <td class="distance">17.7 km</td>
+                <td class="price">₹10,520<small>/ sq ft</small></td>
               </tr>
-              <tr data-project="Shriram 107 SouthEast" data-location="Attibele / Manchanahalli Road" data-amenities="19 acres, basketball, volleyball, football, skating" data-station="Bommasandra Yellow" data-metro-distance="10.6" data-etv="19.3">
+              <tr data-project="Shriram 107 SouthEast" data-location="Attibele / Manchanahalli Road" data-amenities="19 acres, basketball, volleyball, football, skating" data-station="Bommasandra Yellow" data-metro-distance="10.6" data-etv="19.3" data-price="7470">
                 <td><div class="cell-stack"><span class="project-name">Shriram 107 SouthEast</span></div></td>
                 <td>Attibele / Manchanahalli Road</td>
                 <td class="amenities">19 acres, basketball, volleyball, football, skating</td>
                 <td><span class="station-wrap">Bommasandra <span class="badge line-yellow">Yellow</span></span></td>
                 <td class="distance">10.6 km</td>
                 <td class="distance">19.3 km</td>
+                <td class="price">₹7,470<small>/ sq ft</small></td>
               </tr>
-              <tr data-project="Brigade El Dorado" data-location="KIADB Aerospace Park / Bagalur" data-amenities="toddlers play, kids play, mini cricket, football, tennis, basketball, skating, volleyball" data-station="Krishnarajapura (K.R. Pura) Purple" data-metro-distance="17.1" data-etv="23.7">
+              <tr data-project="Brigade El Dorado" data-location="KIADB Aerospace Park / Bagalur" data-amenities="toddlers play, kids play, mini cricket, football, tennis, basketball, skating, volleyball" data-station="Krishnarajapura (K.R. Pura) Purple" data-metro-distance="17.1" data-etv="23.7" data-price="9591">
                 <td><div class="cell-stack"><span class="project-name">Brigade El Dorado</span></div></td>
                 <td>KIADB Aerospace Park / Bagalur</td>
                 <td class="amenities">toddlers play, kids play, mini cricket, football, tennis, basketball, skating, volleyball</td>
                 <td><span class="station-wrap">Krishnarajapura (K.R. Pura) <span class="badge line-purple">Purple</span></span></td>
                 <td class="distance">17.1 km</td>
                 <td class="distance">23.7 km</td>
+                <td class="price">₹9,591<small>/ sq ft</small></td>
               </tr>
-              <tr data-project="Provident Ecopolitan" data-location="KIADB Aerospace Park / Hoovinayakanahalli" data-amenities="kids play, mini soccer, cricket net, skating, badminton, squash" data-station="Krishnarajapura (K.R. Pura) Purple" data-metro-distance="17.3" data-etv="23.9">
+              <tr data-project="Provident Ecopolitan" data-location="KIADB Aerospace Park / Hoovinayakanahalli" data-amenities="kids play, mini soccer, cricket net, skating, badminton, squash" data-station="Krishnarajapura (K.R. Pura) Purple" data-metro-distance="17.3" data-etv="23.9" data-price="10020">
                 <td><div class="cell-stack"><span class="project-name">Provident Ecopolitan</span></div></td>
                 <td>KIADB Aerospace Park / Hoovinayakanahalli</td>
                 <td class="amenities">kids play, mini soccer, cricket net, skating, badminton, squash</td>
                 <td><span class="station-wrap">Krishnarajapura (K.R. Pura) <span class="badge line-purple">Purple</span></span></td>
                 <td class="distance">17.3 km</td>
                 <td class="distance">23.9 km</td>
+                <td class="price">₹10,020<small>/ sq ft</small></td>
               </tr>
-              <tr data-project="Assetz Sora & Saki" data-location="Gummanahalli / KIADB Aerospace Park" data-amenities="kids play, kids pool, box cricket, futsal, basketball, tennis, badminton, squash" data-station="Krishnarajapura (K.R. Pura) Purple" data-metro-distance="17.5" data-etv="24.0">
+              <tr data-project="Assetz Sora & Saki" data-location="Gummanahalli / KIADB Aerospace Park" data-amenities="kids play, kids pool, box cricket, futsal, basketball, tennis, badminton, squash" data-station="Krishnarajapura (K.R. Pura) Purple" data-metro-distance="17.5" data-etv="24.0" data-price="11180">
                 <td><div class="cell-stack"><span class="project-name">Assetz Sora & Saki</span></div></td>
                 <td>Gummanahalli / KIADB Aerospace Park</td>
                 <td class="amenities">kids play, kids pool, box cricket, futsal, basketball, tennis, badminton, squash</td>
                 <td><span class="station-wrap">Krishnarajapura (K.R. Pura) <span class="badge line-purple">Purple</span></span></td>
                 <td class="distance">17.5 km</td>
                 <td class="distance">24.0 km</td>
+                <td class="price">₹11,180<small>/ sq ft</small></td>
               </tr>
-              <tr data-project="Prestige Jindal City" data-location="Anchepalya / Tumkur Road" data-amenities="kids play, 2 cricket pitches, basketball, skating, tennis, mini soccer, 3 badminton courts, squash, creche" data-station="Chikkabidarakallu Green" data-metro-distance="1.2" data-etv="25.5">
+              <tr data-project="Prestige Jindal City" data-location="Anchepalya / Tumkur Road" data-amenities="kids play, 2 cricket pitches, basketball, skating, tennis, mini soccer, 3 badminton courts, squash, creche" data-station="Chikkabidarakallu Green" data-metro-distance="1.2" data-etv="25.5" data-price="10950">
                 <td><div class="cell-stack"><span class="project-name">Prestige Jindal City</span></div></td>
                 <td>Anchepalya / Tumkur Road</td>
                 <td class="amenities">kids play, 2 cricket pitches, basketball, skating, tennis, mini soccer, 3 badminton courts, squash, creche</td>
                 <td><span class="station-wrap">Chikkabidarakallu <span class="badge line-green">Green</span></span></td>
                 <td class="distance">1.2 km</td>
                 <td class="distance">25.5 km</td>
+                <td class="price">₹10,950<small>/ sq ft</small></td>
               </tr>
-              <tr data-project="Birla Trimaya" data-location="Shettigere / BK Halli Road" data-amenities="52 acres, cricket arena, skating rink, basketball, sand volleyball, lawn tennis" data-station="Madavara Green" data-metro-distance="21.5" data-etv="28.5">
+              <tr data-project="Birla Trimaya" data-location="Shettigere / BK Halli Road" data-amenities="52 acres, cricket arena, skating rink, basketball, sand volleyball, lawn tennis" data-station="Madavara Green" data-metro-distance="21.5" data-etv="28.5" data-price="13270">
                 <td><div class="cell-stack"><span class="project-name">Birla Trimaya</span></div></td>
                 <td>Shettigere / BK Halli Road</td>
                 <td class="amenities">52 acres, cricket arena, skating rink, basketball, sand volleyball, lawn tennis</td>
                 <td><span class="station-wrap">Madavara <span class="badge line-green">Green</span></span></td>
                 <td class="distance">21.5 km</td>
                 <td class="distance">28.5 km</td>
+                <td class="price">₹13,270<small>/ sq ft</small></td>
               </tr>
-              <tr data-project="Godrej MSR City" data-location="Yerthiganahalli / Shettigere" data-amenities="kids play, skating, football field, cycling track" data-station="Madavara Green" data-metro-distance="21.1" data-etv="29.3">
+              <tr data-project="Godrej MSR City" data-location="Yerthiganahalli / Shettigere" data-amenities="kids play, skating, football field, cycling track" data-station="Madavara Green" data-metro-distance="21.1" data-etv="29.3" data-price="10000">
                 <td><div class="cell-stack"><span class="project-name">Godrej MSR City</span></div></td>
                 <td>Yerthiganahalli / Shettigere</td>
                 <td class="amenities">kids play, skating, football field, cycling track</td>
                 <td><span class="station-wrap">Madavara <span class="badge line-green">Green</span></span></td>
                 <td class="distance">21.1 km</td>
                 <td class="distance">29.3 km</td>
+                <td class="price">₹10,000<small>/ sq ft</small></td>
               </tr>
-              <tr data-project="Sattva Vasanta Skye" data-location="Devanahalli / Airport Road" data-amenities="16 acres, kids play, pickleball, cricket, tennis, futsal" data-station="Madavara Green" data-metro-distance="22.2" data-etv="30.7">
+              <tr data-project="Sattva Vasanta Skye" data-location="Devanahalli / Airport Road" data-amenities="16 acres, kids play, pickleball, cricket, tennis, futsal" data-station="Madavara Green" data-metro-distance="22.2" data-etv="30.7" data-price="10970">
                 <td><div class="cell-stack"><span class="project-name">Sattva Vasanta Skye</span></div></td>
                 <td>Devanahalli / Airport Road</td>
                 <td class="amenities">16 acres, kids play, pickleball, cricket, tennis, futsal</td>
                 <td><span class="station-wrap">Madavara <span class="badge line-green">Green</span></span></td>
                 <td class="distance">22.2 km</td>
                 <td class="distance">30.7 km</td>
+                <td class="price">₹10,970<small>/ sq ft</small></td>
               </tr>
-              <tr data-project="Embassy Edge" data-location="Nagamangala / Embassy Springs" data-amenities="football, basketball, badminton, tennis, creche, central park" data-station="Madavara Green" data-metro-distance="18.8" data-etv="31.3">
+              <tr data-project="Embassy Edge" data-location="Nagamangala / Embassy Springs" data-amenities="football, basketball, badminton, tennis, creche, central park" data-station="Madavara Green" data-metro-distance="18.8" data-etv="31.3" data-price="11000">
                 <td><div class="cell-stack"><span class="project-name">Embassy Edge</span></div></td>
                 <td>Nagamangala / Embassy Springs</td>
                 <td class="amenities">football, basketball, badminton, tennis, creche, central park</td>
                 <td><span class="station-wrap">Madavara <span class="badge line-green">Green</span></span></td>
                 <td class="distance">18.8 km</td>
                 <td class="distance">31.3 km</td>
+                <td class="price">₹11,000<small>/ sq ft</small></td>
               </tr>
-              <tr data-project="Embassy Springs" data-location="Nagamangala / Kundana Hobli" data-amenities="football, golf, squash, kids pool, play area, school" data-station="Madavara Green" data-metro-distance="19.4" data-etv="31.7">
+              <tr data-project="Embassy Springs" data-location="Nagamangala / Kundana Hobli" data-amenities="football, golf, squash, kids pool, play area, school" data-station="Madavara Green" data-metro-distance="19.4" data-etv="31.7" data-price="12100">
                 <td><div class="cell-stack"><span class="project-name">Embassy Springs</span></div></td>
                 <td>Nagamangala / Kundana Hobli</td>
                 <td class="amenities">football, golf, squash, kids pool, play area, school</td>
                 <td><span class="station-wrap">Madavara <span class="badge line-green">Green</span></span></td>
                 <td class="distance">19.4 km</td>
                 <td class="distance">31.7 km</td>
+                <td class="price">₹12,100<small>/ sq ft</small></td>
               </tr>
             </tbody>
           </table>
